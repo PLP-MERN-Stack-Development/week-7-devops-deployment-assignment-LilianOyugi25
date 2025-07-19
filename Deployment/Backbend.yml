@@ -1,0 +1,17 @@
+# Deployment config for Render (Backend)
+name: Deploy Backend to Render
+on:
+  push:
+    branches: [main]
+    paths: ['server/**']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Render
+        uses: render-actions/deploy@v1
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}
