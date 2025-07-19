@@ -1,0 +1,20 @@
+# CropConnect Deployment - Western Kenya
+
+## Live URLs
+- **Frontend**: https://cropconnect-ke.vercel.app  
+- **Backend**: https://cropconnect-backend.onrender.com  
+
+## Setup
+1. **Environment Variables**:  
+   Rename `.env.example` to `.env` and fill values  
+
+2. **CI/CD**:  
+   - Backend auto-deploys to Render on push  
+   - Frontend deploys to Vercel via GitHub Actions  
+
+## Monitoring
+- MongoDB Atlas: Kenya (Nairobi) Cluster  
+- Uptime checks for rural connectivity  
+
+**Developer**: Lilian Oyugi (oyugililian@gmail.com)  
+**Region**: Kakamega, Western Kenya  
