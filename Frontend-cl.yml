@@ -1,0 +1,9 @@
+name: Frontend CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd client && npm install
+      - run: cd client && npm run build
